@@ -21,7 +21,6 @@ function liveSearch (search: string | number){
   filteredComments.value = comments.value.filter(item =>
       item.email?.toLowerCase().includes(search.toString())
   );
-  console.log(filteredComments.value)
 }
 
 function showComments () {

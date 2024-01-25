@@ -29,7 +29,6 @@ export function usePosts() {
                 `https://jsonplaceholder.typicode.com/posts/${id}`
             );
             post.value = await response.json();
-            console.log(post.value)
         } catch (err) {
             error.value = 'Error fetching post.';
             console.error(err);
